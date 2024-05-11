@@ -1,3 +1,18 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import '@radix-ui/themes/styles.css';
+
+body {
+  margin: 0px;
+  overscroll-behavior: none;
+}
+
+.wb-heading-self-documenting-tasks {
+  background: linear-gradient(10deg, var(--blue-9), var(--sky-9));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wb-heading-workbench {
+  background: linear-gradient(40deg, var(--lime-9), var(--green-9));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,16 @@
+.wb-nav-bar {
+  background-color: rgba(
+    calc(0.16 * 255),
+    calc(0.16 * 255),
+    calc(0.18 * 255),
+    0.9
+  );
+  position: fixed;
+  width: 100%;
+  height: var(--space-8);
+  z-index: 100;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  transition: border-bottom-color 0.01s;
+  backdrop-filter: blur(10px);
+}
