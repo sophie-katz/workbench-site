@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: '/docs',
+    path: '/#/docs',
     element: (
       <MainLayout activeTab="docs">
         <DocsPage />
