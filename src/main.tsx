@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Theme } from '@radix-ui/themes';
 import './main.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import FrontPage from './pages/front/FrontPage';
 import DocsPage from './pages/docs/DocsPage';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: (
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: '/#/docs',
+    path: '/docs',
     element: (
       <MainLayout activeTab="docs">
         <DocsPage />
