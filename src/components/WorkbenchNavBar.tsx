@@ -48,9 +48,6 @@ export default function WorkbenchNavBar({ activeTab }: WorkbenchNavBarProps) {
             justify="end"
           >
             <Link href="/" underline="none">
-              {/* <Heading as="h1" className="wb-heading-workbench">
-                Wb
-              </Heading> */}
               <img
                 src={LogoTransparent}
                 alt="Workbench logo"
