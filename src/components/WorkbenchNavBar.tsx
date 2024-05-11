@@ -59,7 +59,7 @@ export default function WorkbenchNavBar({ activeTab }: WorkbenchNavBarProps) {
             <TabNav.Link href="/" active={activeTab == 'about'}>
               About
             </TabNav.Link>
-            <TabNav.Link href="/docs" active={activeTab == 'docs'}>
+            <TabNav.Link href="/#/docs" active={activeTab == 'docs'}>
               Documentation
             </TabNav.Link>
           </TabNav.Root>

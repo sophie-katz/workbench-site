@@ -47,7 +47,7 @@ export default function InstallSection() {
             <Text>Also take a look at:</Text>
           </p>
           <Flex gap="4">
-            <Link href="/docs">
+            <Link href="/#/docs">
               <Button size="4" color="blue">
                 <RocketIcon />
                 Documentation
