@@ -12,23 +12,21 @@ import { useState } from 'react';
 import './WorkbenchNavBar.css';
 import { GitHubLogoIcon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
 import LogoTransparent from '../assets/logo-transparent.svg';
+import { useWindowScroll } from '@uidotdev/usehooks';
 
 export interface WorkbenchNavBarProps {
   activeTab: 'about' | 'docs';
 }
 
 export default function WorkbenchNavBar({ activeTab }: WorkbenchNavBarProps) {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  document.addEventListener('scroll', () => {
-    setScrollPosition(window.scrollY);
-  });
+  const [windowScroll, scrollTo] = useWindowScroll();
 
   return (
     <>
       <Box
         style={{
-          borderColor: scrollPosition < 5 ? 'var(--gray-4)' : 'var(--gray-6)',
+          borderColor:
+            (windowScroll.y ?? 0) < 5 ? 'var(--gray-4)' : 'var(--gray-6)',
         }}
         className="wb-nav-bar"
       >
@@ -59,7 +57,10 @@ export default function WorkbenchNavBar({ activeTab }: WorkbenchNavBarProps) {
             <TabNav.Link href="/" active={activeTab == 'about'}>
               About
             </TabNav.Link>
-            <TabNav.Link href="/#/docs" active={activeTab == 'docs'}>
+            <TabNav.Link
+              href="/#/docs/create-new-project"
+              active={activeTab == 'docs'}
+            >
               Documentation
             </TabNav.Link>
           </TabNav.Root>

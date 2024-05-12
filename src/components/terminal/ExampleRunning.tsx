@@ -29,7 +29,7 @@ export default function ExampleRunning() {
           <span className="ultima-fg-dimmed-green">◆</span>{' '}
           <span className="ultima-fg-green">'build' completed</span>{' '}
           <span className="ultima-fg-bright-black">
-            in 0.51s: npm run build
+            in 0.31s: npm run build
           </span>
         </>
       </TerminalOutput>

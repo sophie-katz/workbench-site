@@ -32,6 +32,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react-dom", "npm:18.3.0"],\
           ["@typescript-eslint/eslint-plugin", "virtual:f441476bf4efbea7ddc582b5aa454c9533dad85a9730a5362fe730e995063408b97ae87e0a4c0033231f8deda86df2898767aa25e83f7c453e03aac22d8bfad8#npm:7.8.0"],\
           ["@typescript-eslint/parser", "virtual:f441476bf4efbea7ddc582b5aa454c9533dad85a9730a5362fe730e995063408b97ae87e0a4c0033231f8deda86df2898767aa25e83f7c453e03aac22d8bfad8#npm:7.8.0"],\
+          ["@uidotdev/usehooks", "virtual:f441476bf4efbea7ddc582b5aa454c9533dad85a9730a5362fe730e995063408b97ae87e0a4c0033231f8deda86df2898767aa25e83f7c453e03aac22d8bfad8#npm:2.4.1"],\
           ["@vitejs/plugin-react", "virtual:f441476bf4efbea7ddc582b5aa454c9533dad85a9730a5362fe730e995063408b97ae87e0a4c0033231f8deda86df2898767aa25e83f7c453e03aac22d8bfad8#npm:4.2.1"],\
           ["eslint", "npm:9.2.0"],\
           ["eslint-plugin-react", "virtual:f441476bf4efbea7ddc582b5aa454c9533dad85a9730a5362fe730e995063408b97ae87e0a4c0033231f8deda86df2898767aa25e83f7c453e03aac22d8bfad8#npm:7.34.1"],\
@@ -2954,6 +2955,32 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/visitor-keys", "npm:7.8.0"],\
           ["@typescript-eslint/types", "npm:7.8.0"],\
           ["eslint-visitor-keys", "npm:3.4.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@uidotdev/usehooks", [\
+      ["npm:2.4.1", {\
+        "packageLocation": "../../.yarn/berry/cache/@uidotdev-usehooks-npm-2.4.1-c11868da60-10c0.zip/node_modules/@uidotdev/usehooks/",\
+        "packageDependencies": [\
+          ["@uidotdev/usehooks", "npm:2.4.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:f441476bf4efbea7ddc582b5aa454c9533dad85a9730a5362fe730e995063408b97ae87e0a4c0033231f8deda86df2898767aa25e83f7c453e03aac22d8bfad8#npm:2.4.1", {\
+        "packageLocation": "./.yarn/__virtual__/@uidotdev-usehooks-virtual-e4a01aaf0a/3/.yarn/berry/cache/@uidotdev-usehooks-npm-2.4.1-c11868da60-10c0.zip/node_modules/@uidotdev/usehooks/",\
+        "packageDependencies": [\
+          ["@uidotdev/usehooks", "virtual:f441476bf4efbea7ddc582b5aa454c9533dad85a9730a5362fe730e995063408b97ae87e0a4c0033231f8deda86df2898767aa25e83f7c453e03aac22d8bfad8#npm:2.4.1"],\
+          ["@types/react", "npm:18.3.1"],\
+          ["@types/react-dom", "npm:18.3.0"],\
+          ["react", "npm:18.3.1"],\
+          ["react-dom", "virtual:f441476bf4efbea7ddc582b5aa454c9533dad85a9730a5362fe730e995063408b97ae87e0a4c0033231f8deda86df2898767aa25e83f7c453e03aac22d8bfad8#npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7230,6 +7257,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react-dom", "npm:18.3.0"],\
           ["@typescript-eslint/eslint-plugin", "virtual:f441476bf4efbea7ddc582b5aa454c9533dad85a9730a5362fe730e995063408b97ae87e0a4c0033231f8deda86df2898767aa25e83f7c453e03aac22d8bfad8#npm:7.8.0"],\
           ["@typescript-eslint/parser", "virtual:f441476bf4efbea7ddc582b5aa454c9533dad85a9730a5362fe730e995063408b97ae87e0a4c0033231f8deda86df2898767aa25e83f7c453e03aac22d8bfad8#npm:7.8.0"],\
+          ["@uidotdev/usehooks", "virtual:f441476bf4efbea7ddc582b5aa454c9533dad85a9730a5362fe730e995063408b97ae87e0a4c0033231f8deda86df2898767aa25e83f7c453e03aac22d8bfad8#npm:2.4.1"],\
           ["@vitejs/plugin-react", "virtual:f441476bf4efbea7ddc582b5aa454c9533dad85a9730a5362fe730e995063408b97ae87e0a4c0033231f8deda86df2898767aa25e83f7c453e03aac22d8bfad8#npm:4.2.1"],\
           ["eslint", "npm:9.2.0"],\
           ["eslint-plugin-react", "virtual:f441476bf4efbea7ddc582b5aa454c9533dad85a9730a5362fe730e995063408b97ae87e0a4c0033231f8deda86df2898767aa25e83f7c453e03aac22d8bfad8#npm:7.34.1"],\

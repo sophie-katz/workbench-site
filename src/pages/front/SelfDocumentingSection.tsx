@@ -1,42 +1,34 @@
 import { Box, Code, Flex, Heading, Text } from '@radix-ui/themes';
 import CodeSnippet from '../../components/CodeSnippet';
 import ExampleTaskHelp from '../../components/terminal/ExampleTaskHelp';
+import FrontPageSection from './FrontPageSection';
+import FrontPageSectionHalf from './FrontPageSectionHalf';
+import { useWindowSize } from '@uidotdev/usehooks';
 
 export default function SelfDocumentingSection() {
+  const windowSize = useWindowSize();
+
   return (
-    <Box style={{ backgroundColor: 'var(--gray-3)' }} className="wb-section">
-      <Flex direction="row">
-        <ExampleTaskHelp />
-        <Box style={{ flexGrow: 1, paddingLeft: '5rem' }}>
-          <Heading as="h1">
-            <Text className="wb-heading-self-documenting-tasks">
-              Self-documenting tasks
-            </Text>{' '}
-            instead of separate readmes
-          </Heading>
-          <p>
-            <Text>
-              Adding descriptions and examples to tasks means that you can share
-              how your projects are used without having to write separate
-              documentation.
-            </Text>
-          </p>
-          <ul>
-            <li>
-              <Text weight="bold">Clear tasks, Less confusion:</Text> No hunting
-              for separate documentation, everyone's on the same page.
-            </li>
-            <li>
-              <Text weight="bold">Faster workflow, Less wasted time:</Text>{' '}
-              Crystal-clear instructions keep projects moving without having to
-              search for instructions.
-            </li>
-          </ul>
-          <p>
-            <Text>
-              Add this to your <Code>workbench.yml</Code> file:
-            </Text>
-          </p>
+    <FrontPageSection backgroundColor="var(--gray-3)">
+      {(windowSize.width
+        ? windowSize.width >
+          parseFloat(
+            window.getComputedStyle(document.documentElement).fontSize,
+          ) *
+            60
+        : true) && (
+        <FrontPageSectionHalf>
+          <ExampleTaskHelp />
+        </FrontPageSectionHalf>
+      )}
+      <FrontPageSectionHalf>
+        <Heading as="h1">
+          <Text className="wb-heading-self-documenting-tasks">
+            Self-documenting tasks
+          </Text>{' '}
+          instead of separate readmes
+        </Heading>
+        <p>
           <CodeSnippet>
             <span className="ultima-fg-yellow">lint:</span>
             <br />
@@ -58,8 +50,28 @@ export default function SelfDocumentingSection() {
             <span className="ultima-fg-yellow">description:</span> Also fix
             style problems if possible
           </CodeSnippet>
-        </Box>
-      </Flex>
-    </Box>
+        </p>
+        <p>
+          <Text>
+            Add descriptions and examples to tasks to share how your projects
+            are used without having to write separate documentation.
+          </Text>
+        </p>
+        <p>
+          <Heading as="h2" style={{ display: 'inline' }} size="3">
+            Less confusion
+          </Heading>{' '}
+          - No hunting for separate documentation or documentation that gets
+          stale.
+        </p>
+        <p>
+          <Heading as="h2" style={{ display: 'inline' }} size="3">
+            Faster workflow
+          </Heading>{' '}
+          - Crystal-clear instructions keep projects moving without having to
+          search for instructions.
+        </p>
+      </FrontPageSectionHalf>
+    </FrontPageSection>
   );
 }
