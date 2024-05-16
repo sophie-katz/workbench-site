@@ -94,7 +94,7 @@ export default function DocsPage() {
       <p>
         <CodeSnippet
           text={
-            'tasks:\n  build:\n    # This will get run in a shell:\n    run: npx tsc\n\n    # And this will not:\n    run: ["npx": "tsc"]'
+            'tasks:\n  build:\n    # This will get run in a shell:\n    run: npx tsc\n\n    # And this will not:\n    run: ["npx", "tsc"]'
           }
         >
           <span className="ultima-fg-yellow">tasks:</span>

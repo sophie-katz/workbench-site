@@ -64,7 +64,7 @@ export default function DocsPage() {
       <p>
         <CodeSnippet
           text={
-            'tasks:\n  build:\n    description: Build the project.\n    run: npx tsc\n    examples:\n      - run:\n      - run: --watch\n      - description: Watch for changes'
+            'tasks:\n  build:\n    description: Build the project.\n    run: npx tsc\n    examples:\n      - run:\n      - run: --watch\n        description: Watch for changes'
           }
         >
           <span className="ultima-fg-yellow">tasks:</span>
