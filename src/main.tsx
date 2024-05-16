@@ -11,6 +11,7 @@ import ConfigureTasksPage from './pages/docs/ConfigureTasksPage';
 import AddDocumentationPage from './pages/docs/AddDocumentationPage';
 import CommandLinePage from './pages/docs/CommandLinePage';
 import WorkbenchYmlReferencePage from './pages/docs/WorkbenchYmlReferencePage';
+import TaskOrganizationPage from './pages/docs/TaskOrganizationPage';
 
 const docsPages = [
   {
@@ -27,6 +28,11 @@ const docsPages = [
     title: 'Add documentation',
     slug: 'add-documentation',
     element: <AddDocumentationPage />,
+  },
+  {
+    title: 'Task organization',
+    slug: 'task-organization',
+    element: <TaskOrganizationPage />,
   },
   {
     title: 'Command line',
