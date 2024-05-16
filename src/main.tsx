@@ -44,7 +44,7 @@ const router = createHashRouter([
   {
     path: '/',
     element: (
-      <MainLayout activeTab="about">
+      <MainLayout activeTab="about" showCopyright={true}>
         <FrontPage />
       </MainLayout>
     ),
