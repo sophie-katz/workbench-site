@@ -1,5 +1,4 @@
 import { Box, Code, Flex, Heading, Link } from '@radix-ui/themes';
-import CodeSnippet from '../../components/CodeSnippet';
 
 export default function DocsPage() {
   return (

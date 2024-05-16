@@ -5,6 +5,10 @@ body {
   overscroll-behavior: none;
 }
 
+.radix-themes {
+  --color-background: var(--gray-4);
+}
+
 .wb-heading-self-documenting-tasks {
   background: linear-gradient(10deg, var(--blue-9), var(--sky-9));
   background-clip: text;

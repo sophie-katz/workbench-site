@@ -2,6 +2,7 @@ import WorkbenchNavBar, {
   WorkbenchNavBarProps,
 } from '../components/WorkbenchNavBar';
 import { Text } from '@radix-ui/themes';
+import './MainLayout.css';
 
 export interface MainLayoutProps extends WorkbenchNavBarProps {
   children: React.ReactNode;
@@ -14,14 +15,8 @@ export default function MainLayout(props: MainLayoutProps) {
     <>
       <WorkbenchNavBar {...props} />
       {children}
-      <div
-        style={{
-          width: '100%',
-          textAlign: 'center',
-          paddingBottom: 'var(--space-2)',
-        }}
-      >
-        <Text size="1" style={{ color: 'var(--gray-8)' }}>
+      <div className="MainLayout--footer">
+        <Text size="1" className="MainLayout--copyright">
           Copyright © 2024 Sophie Katz
         </Text>
       </div>

@@ -6,7 +6,6 @@ import { createHashRouter, RouterProvider } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import DocsLayout from './layouts/DocsLayout';
 import FrontPage from './pages/front/FrontPage';
-import DocsPage from './pages/docs/WorkbenchYmlReferencePage';
 import CreateNewProjectPage from './pages/docs/CreateNewProjectPage';
 import ConfigureTasksPage from './pages/docs/ConfigureTasksPage';
 import AddDocumentationPage from './pages/docs/AddDocumentationPage';
@@ -64,7 +63,7 @@ const router = createHashRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <Theme appearance="dark" style={{ background: 'var(--gray-4)' }}>
+    <Theme appearance="dark">
       <RouterProvider router={router} />
     </Theme>
   </React.StrictMode>,

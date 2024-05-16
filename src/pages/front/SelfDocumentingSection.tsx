@@ -1,26 +1,15 @@
-import { Box, Code, Flex, Heading, Text } from '@radix-ui/themes';
+import { Heading, Text } from '@radix-ui/themes';
 import CodeSnippet from '../../components/CodeSnippet';
 import ExampleTaskHelp from '../../components/terminal/ExampleTaskHelp';
 import FrontPageSection from './FrontPageSection';
 import FrontPageSectionHalf from './FrontPageSectionHalf';
-import { useWindowSize } from '@uidotdev/usehooks';
 
 export default function SelfDocumentingSection() {
-  const windowSize = useWindowSize();
-
   return (
-    <FrontPageSection backgroundColor="var(--gray-3)">
-      {(windowSize.width
-        ? windowSize.width >
-          parseFloat(
-            window.getComputedStyle(document.documentElement).fontSize,
-          ) *
-            60
-        : true) && (
-        <FrontPageSectionHalf>
-          <ExampleTaskHelp />
-        </FrontPageSectionHalf>
-      )}
+    <FrontPageSection backgroundColor="var(--gray-3)" wrapReverse={true}>
+      <FrontPageSectionHalf>
+        <ExampleTaskHelp />
+      </FrontPageSectionHalf>
       <FrontPageSectionHalf>
         <Heading as="h1">
           <Text className="wb-heading-self-documenting-tasks">

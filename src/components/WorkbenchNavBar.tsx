@@ -1,3 +1,5 @@
+/// <reference types="vite-plugin-svgr/client" />
+
 import {
   Box,
   Flex,
@@ -11,7 +13,7 @@ import {
 import { useState } from 'react';
 import './WorkbenchNavBar.css';
 import { GitHubLogoIcon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
-import LogoTransparent from '../assets/logo-transparent.svg';
+import LogoTransparent from '../assets/logo-transparent.svg?react';
 import { useWindowScroll } from '@uidotdev/usehooks';
 
 export interface WorkbenchNavBarProps {
@@ -46,11 +48,18 @@ export default function WorkbenchNavBar({ activeTab }: WorkbenchNavBarProps) {
             justify="end"
           >
             <Link href="/" underline="none">
-              <img
+              {/* <div style={{  }}> */}
+              <LogoTransparent style={{ height: 'var(--space-5)' }} />
+              {/* <img
                 src={LogoTransparent}
                 alt="Workbench logo"
                 style={{ height: 'var(--space-5)' }}
-              />
+                // style={{
+                //   height: 'calc(4 * var(--space-5))',
+                //   transform: 'scale(0.25)',
+                // }}
+              /> */}
+              {/* </div> */}
             </Link>
           </Flex>
           <TabNav.Root>

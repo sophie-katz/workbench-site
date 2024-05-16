@@ -1,0 +1,14 @@
+.DocsLayout--linkButton {
+  justify-content: stretch;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.DocsLayout--linkButton--selected {
+  background-color: var(--indigo-5);
+}
+
+.DocsLayout--containerBox {
+  background-color: var(--gray-3);
+  border-radius: var(--space-2);
+}

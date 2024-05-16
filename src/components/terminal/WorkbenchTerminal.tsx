@@ -11,7 +11,7 @@ export default function WorkbenchTerminal(props: TerminalProps) {
   const { children, showThemeAttribution } = props;
 
   return (
-    <Flex direction="column" gap="1" overflowX="scroll">
+    <Flex direction="column" gap="1">
       <Box>
         <Terminal {...props}>{children}</Terminal>
       </Box>

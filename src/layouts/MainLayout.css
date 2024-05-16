@@ -1,0 +1,9 @@
+.MainLayout--footer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: var(--space-2);
+}
+
+.MainLayout--copyright {
+  color: var(--gray-8);
+}

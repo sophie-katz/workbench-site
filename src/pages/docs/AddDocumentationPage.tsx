@@ -43,22 +43,10 @@ export default function DocsPage() {
       <p>
         <CodeSnippet text="wb build.help">
           <span className="ultima-fg-yellow">$</span>{' '}
-          <span
-            className="ultima-fg-bright-green"
-            style={{ fontWeight: 'bold' }}
-          >
-            wb
-          </span>{' '}
-          build.help
+          <b className="ultima-fg-bright-green">wb</b> build.help
           <br />
           <span className="ultima-fg-bright-black">usage:</span>{' '}
-          <span
-            className="ultima-fg-bright-green"
-            style={{ fontWeight: 'bold' }}
-          >
-            wb
-          </span>{' '}
-          ...
+          <b className="ultima-fg-bright-green">wb</b> ...
           <br />
           <br />
           Build the project.
@@ -109,22 +97,10 @@ export default function DocsPage() {
       <p>
         <CodeSnippet text="wb build.help">
           <span className="ultima-fg-yellow">$</span>{' '}
-          <span
-            className="ultima-fg-bright-green"
-            style={{ fontWeight: 'bold' }}
-          >
-            wb
-          </span>{' '}
-          build.help
+          <b className="ultima-fg-bright-green">wb</b> build.help
           <br />
           <span className="ultima-fg-bright-black">usage:</span>{' '}
-          <span
-            className="ultima-fg-bright-green"
-            style={{ fontWeight: 'bold' }}
-          >
-            wb
-          </span>{' '}
-          build ...
+          <b className="ultima-fg-bright-green">wb</b> build ...
           <br />
           <br />
           Build the project.
@@ -133,13 +109,7 @@ export default function DocsPage() {
           <span className="ultima-fg-bright-black">examples:</span>
           <br />
           <span className="ultima-fg-bright-black">&nbsp;&nbsp;$</span>{' '}
-          <span
-            className="ultima-fg-bright-green"
-            style={{ fontWeight: 'bold' }}
-          >
-            wb
-          </span>{' '}
-          build
+          <b className="ultima-fg-bright-green">wb</b> build
           <br />
           <br />
           <span className="ultima-fg-magenta">
@@ -147,13 +117,7 @@ export default function DocsPage() {
           </span>
           <br />
           <span className="ultima-fg-bright-black">&nbsp;&nbsp;$</span>{' '}
-          <span
-            className="ultima-fg-bright-green"
-            style={{ fontWeight: 'bold' }}
-          >
-            wb
-          </span>{' '}
-          build --watch
+          <b className="ultima-fg-bright-green">wb</b> build --watch
         </CodeSnippet>
       </p>
       <p>
@@ -186,22 +150,10 @@ export default function DocsPage() {
       <p>
         <CodeSnippet text="wb build.help">
           <span className="ultima-fg-yellow">$</span>{' '}
-          <span
-            className="ultima-fg-bright-green"
-            style={{ fontWeight: 'bold' }}
-          >
-            wb
-          </span>{' '}
-          build.help
+          <b className="ultima-fg-bright-green">wb</b> build.help
           <br />
           <span className="ultima-fg-bright-black">usage:</span>{' '}
-          <span
-            className="ultima-fg-bright-green"
-            style={{ fontWeight: 'bold' }}
-          >
-            wb
-          </span>{' '}
-          build [options]
+          <b className="ultima-fg-bright-green">wb</b> build [options]
         </CodeSnippet>
       </p>
     </>

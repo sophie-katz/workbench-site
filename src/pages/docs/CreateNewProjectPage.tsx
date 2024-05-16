@@ -35,13 +35,7 @@ export default function DocsPage() {
       <p>
         <CodeSnippet text="wb build">
           <span className="ultima-fg-yellow">$</span>{' '}
-          <span
-            className="ultima-fg-bright-green"
-            style={{ fontWeight: 'bold' }}
-          >
-            wb
-          </span>{' '}
-          build
+          <b className="ultima-fg-bright-green">wb</b> build
           <br />
           <span className="ultima-fg-dimmed-green">◆</span>{' '}
           <span className="ultima-fg-green">'b' completed</span>{' '}

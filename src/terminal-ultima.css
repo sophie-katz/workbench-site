@@ -51,6 +51,21 @@
   color: #d0d0d0;
   background-color: #1c1c1c !important;
   border-radius: var(--space-3);
+  font-size: 0.7rem !important;
+  padding: 2rem !important;
+  /* padding-top: 4rem !important; */
+}
+
+.red-btn {
+  display: none;
+}
+
+.yellow-btn {
+  display: none;
+}
+
+.green-btn {
+  display: none;
 }
 
 .ultima-fg-cursor {

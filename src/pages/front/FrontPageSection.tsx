@@ -4,11 +4,13 @@ import { useWindowSize } from '@uidotdev/usehooks';
 export interface FrontPageSectionProps {
   children: React.ReactNode;
   backgroundColor: string;
+  wrapReverse?: boolean;
 }
 
 export default function FrontPageSection({
   children,
   backgroundColor,
+  wrapReverse,
 }: FrontPageSectionProps) {
   const windowSize = useWindowSize();
 
@@ -30,12 +32,12 @@ export default function FrontPageSection({
       <Flex
         direction="row"
         style={{
-          gap: '5rem',
           maxWidth: '110rem',
           marginLeft: 'auto',
           marginRight: 'auto',
         }}
-        wrap="wrap"
+        wrap={wrapReverse ? 'wrap-reverse' : 'wrap'}
+        gap={{ sm: '5rem', initial: '1rem' }}
       >
         {children}
       </Flex>

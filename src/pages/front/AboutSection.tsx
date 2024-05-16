@@ -1,13 +1,10 @@
-import { Box, Flex, Heading, Text } from '@radix-ui/themes';
+import { Heading, Text } from '@radix-ui/themes';
 import ExampleRunning from '../../components/terminal/ExampleRunning';
 import CodeSnippet from '../../components/CodeSnippet';
 import FrontPageSection from './FrontPageSection';
 import FrontPageSectionHalf from './FrontPageSectionHalf';
-import { useWindowSize } from '@uidotdev/usehooks';
 
 export default function AboutSection() {
-  const windowSize = useWindowSize();
-
   return (
     <FrontPageSection backgroundColor="var(--gray-4)">
       <FrontPageSectionHalf>
@@ -52,17 +49,9 @@ export default function AboutSection() {
           - Workbench is written in Rust for snappy performance.
         </p>
       </FrontPageSectionHalf>
-      {(windowSize.width
-        ? windowSize.width >
-          parseFloat(
-            window.getComputedStyle(document.documentElement).fontSize,
-          ) *
-            60
-        : true) && (
-        <FrontPageSectionHalf>
-          <ExampleRunning />
-        </FrontPageSectionHalf>
-      )}
+      <FrontPageSectionHalf>
+        <ExampleRunning />
+      </FrontPageSectionHalf>
     </FrontPageSection>
   );
 }
