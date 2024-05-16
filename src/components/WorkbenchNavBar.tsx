@@ -1,18 +1,8 @@
 /// <reference types="vite-plugin-svgr/client" />
 
-import {
-  Box,
-  Flex,
-  Heading,
-  IconButton,
-  Link,
-  TabNav,
-  Text,
-  TextField,
-} from '@radix-ui/themes';
-import { useState } from 'react';
+import { Box, Flex, Link, TabNav } from '@radix-ui/themes';
 import './WorkbenchNavBar.css';
-import { GitHubLogoIcon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
+import { GitHubLogoIcon } from '@radix-ui/react-icons';
 import LogoTransparent from '../assets/logo-transparent.svg?react';
 import { useWindowScroll } from '@uidotdev/usehooks';
 
@@ -21,7 +11,7 @@ export interface WorkbenchNavBarProps {
 }
 
 export default function WorkbenchNavBar({ activeTab }: WorkbenchNavBarProps) {
-  const [windowScroll, scrollTo] = useWindowScroll();
+  const windowScroll = useWindowScroll()[0];
 
   return (
     <>

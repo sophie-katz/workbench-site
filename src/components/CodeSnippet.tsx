@@ -1,11 +1,4 @@
-import {
-  Box,
-  Card,
-  Code,
-  Flex,
-  IconButton,
-  ScrollArea,
-} from '@radix-ui/themes';
+import { Card, Code, Flex, IconButton, ScrollArea } from '@radix-ui/themes';
 import { CopyIcon, CheckIcon } from '@radix-ui/react-icons';
 import './CodeSnippet.css';
 import { useState } from 'react';

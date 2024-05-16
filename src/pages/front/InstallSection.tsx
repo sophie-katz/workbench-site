@@ -1,10 +1,6 @@
-import { Box, Button, Flex, Link, Text } from '@radix-ui/themes';
+import { Button, Flex, Link, Text } from '@radix-ui/themes';
 import CodeSnippet from '../../components/CodeSnippet';
-import {
-  ClipboardCopyIcon,
-  GitHubLogoIcon,
-  RocketIcon,
-} from '@radix-ui/react-icons';
+import { GitHubLogoIcon, RocketIcon } from '@radix-ui/react-icons';
 import FrontPageSection from './FrontPageSection';
 import FrontPageSectionHalf from './FrontPageSectionHalf';
 
