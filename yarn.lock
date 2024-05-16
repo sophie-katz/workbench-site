@@ -3276,13 +3276,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:0.3.2":
-  version: 0.3.2
-  resolution: "commander@npm:0.3.2"
-  checksum: 10c0/6341af3faf5b24a1bf6287d272d2c193deaccbfe99d3d95ef207743973b0f5bf51a089839df0094b522c5d4c7a002083671d5a58d116961fcc4f40e337bc65e9
-  languageName: node
-  linkType: hard
-
 "concat-map@npm:0.0.1":
   version: 0.0.1
   resolution: "concat-map@npm:0.0.1"
@@ -6037,17 +6030,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"search@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "search@npm:1.0.0"
-  dependencies:
-    commander: "npm:0.3.2"
-  bin:
-    search: ./bin/search
-  checksum: 10c0/183dccb1499e86413b536791fdc391f365d1b0918b91f7883757bbb1328c5410e26a34f3c48de15bdd4a837c684dfeb9b0a9b6ea7552809c3bb15e9707d7fe52
-  languageName: node
-  linkType: hard
-
 "semver@npm:^6.3.1":
   version: 6.3.1
   resolution: "semver@npm:6.3.1"
@@ -6912,7 +6894,6 @@ __metadata:
     react-router: "npm:^6.23.0"
     react-router-dom: "npm:^6.23.0"
     react-terminal-ui: "npm:^1.2.0"
-    search: "npm:^1.0.0"
     styled-components: "npm:^6.1.11"
     typescript: "npm:^5.4.5"
     vite: "npm:^5.2.0"

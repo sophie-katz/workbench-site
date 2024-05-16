@@ -24,7 +24,6 @@
     "react-router": "^6.23.0",
     "react-router-dom": "^6.23.0",
     "react-terminal-ui": "^1.2.0",
-    "search": "^1.0.0",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {
